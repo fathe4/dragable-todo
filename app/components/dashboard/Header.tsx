@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
     day: "2-digit",
     year: "numeric",
   });
-    console.log(Config.backendAPi.baseUrl, "Config.backendAPi.baseUrl")
+
   return (
     <header className="bg-white border-b border-gray-200 px-4 md:px-14 py-6">
       <div className="flex justify-between items-center">
