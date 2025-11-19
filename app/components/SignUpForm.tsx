@@ -1,29 +1,10 @@
 "use client";
 
 import Image from "next/image";
-
-export const SignUpIllustration: React.FC = () => {
-  return (
-    <div className="hidden lg:flex lg:w-1/2 bg-[#E2ECF8] items-center justify-center p-12">
-      <div className="max-w-md w-full">
-        <Image
-          src="/register.png"
-          alt="Sign Up Illustration"
-          width={750}
-          height={750}
-          className="w-full h-auto object-contain"
-          priority
-        />
-      </div>
-    </div>
-  );
-};
-
 import React from "react";
 import { useForm } from "react-hook-form";
 import { InputField } from "./common/InputField";
 import { Button } from "./common/Button";
-import { authClient } from "../lib/auth-client";
 import { useSignUp } from "../hooks/User/Mutation";
 import Link from "next/link";
 
@@ -191,6 +172,23 @@ export const SignUpForm: React.FC = () => {
             Log in
         </Link>
         </p>
+      </div>
+    </div>
+  );
+};
+
+export const SignUpIllustration: React.FC = () => {
+  return (
+    <div className="hidden lg:flex lg:w-1/2 bg-[#E2ECF8] items-center justify-center p-12">
+      <div className="max-w-md w-full">
+        <Image
+          src="/register.png"
+          alt="Sign Up Illustration"
+          width={750}
+          height={750}
+          className="w-full h-auto object-contain"
+          priority
+        />
       </div>
     </div>
   );
