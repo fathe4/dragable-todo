@@ -6,6 +6,7 @@ import { InputField } from "./common/InputField";
 import { Button } from "./common/Button";
 import Api from "../services/Api";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export type Login = {
   email: string;
@@ -103,12 +104,12 @@ export const LoginForm: React.FC = () => {
 
         <p className="mt-6 text-center text-sm text-gray-600">
           Dont have an account?{" "}
-          <a
+          <Link
             href="/signup"
             className="text-blue-600 font-medium hover:text-blue-700"
           >
             Register now
-          </a>
+          </Link>
         </p>
       </div>
     </div>
